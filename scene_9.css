@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html, body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  -webkit-user-select: none;
+}
+
+#chapter_num {
+  position: absolute;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 50px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .5);
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+  display: none;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/swamp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#dialogues {
+  top: 0;
+  left: 0;
+}
+#text {
+  padding: 50px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .7);
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  z-index: 30;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  color: #fff;
+  font-size: 18px;
+}
+#names {
+  padding: 20px;
+  z-index: 40;
+  color: yellow;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-90%);
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fade-out {
+  0%{
+    opacity: 100;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.loader-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+#characters li {
+  padding: 10px 0;
+}
+
+#characters img {
+  position: absolute; 
+}
+
+#portrait-1 {
+  width: 120%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#portrait-2 {
+  width: 120%;
+  height: 100%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  display: none;
+}
+
+#options_1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#options_1 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 15px;
+  
+}
+
+#options_1 a {
+  display: none;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .7);
+  width: 50%;
+  border-radius: 20px;
+}
+
+#options_2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#options_2 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 15px;
+  
+}
+
+#options_2 a {
+  display: none;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .7);
+  width: 50%;
+  border-radius: 20px;
+}
+
+#c_1 {
+  display: none;
+}
+
+#c_2 {
+  display: none;
+}
+
+#blackscreen {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 20;
+  width:100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+#bl_p {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  0%{
+    opacity: 100;
+  }
+  80%{
+    opacity: 100;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+#objects {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .7);
+  pointer-events: none;
+  display: none;
+}
+
+#objects img {
+  position: absolute;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%,50%);
+  width: 35%;
+  height: 50%;
+  pointer-events: none
+}
+
+#obj_1 {
+  display: none;
+}
+
+#obj_2 {
+  display: none;
+}
+
+#obj_3 {
+  display: none;
+}
+
+#obj_4 {
+  display: none;
+}
+
+#obj_5 {
+  display: none;
+}
+
+#obj_6 {
+  display: none;
+}
