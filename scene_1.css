@@ -141,3 +141,21 @@ html, body {
     font-size: 14px;
   }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #dialogues {
+    padding: 10px;
+  }
+  #text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #dialogues {
+    padding: 5px;
+  }
+  #text {
+    font-size: 14px;
+  }
+}
