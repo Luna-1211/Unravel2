@@ -4,7 +4,6 @@
   list-style: none;
 }
 html, body {
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -37,6 +36,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 #dialogues {
