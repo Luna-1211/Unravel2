@@ -123,3 +123,21 @@ html, body {
   left: 50%;
   transform: translate(-50%,-70%);
 }
+
+@media (max-width: 768px) {
+  #dialogues {
+    padding: 10px;
+  }
+  #text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #dialogues {
+    padding: 5px;
+  }
+  #text {
+    font-size: 14px;
+  }
+}
