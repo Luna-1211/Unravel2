@@ -7,6 +7,8 @@ html, body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 #chapter_num {
@@ -29,7 +31,7 @@ html, body {
 }
 
 #game {
-  width: 100vw;
+  max-width: 100%;
   height: 100vh;
   background-image: url(classroom_2.png);
   background-repeat: no-repeat;
@@ -39,30 +41,35 @@ html, body {
 
 #dialogues {
   z-index: 10;
-}
-#text {
-  padding: 50px;
-  text-align: center;
   position: absolute;
-  top: 100%;
-  z-index: 9;
-  left: 50%;
-  transform: translate(-50%,-100%);
-  color: #fff;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  font-size: 18px;
+  padding: 20px;
+  text-align: center;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, .7);
 }
-#names {
+
+.dialogue-container {
+  display: inline-block;
+  max-width: 80%;
   padding: 20px;
-  z-index: 10;
-  color: yellow;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%,-90%);
+  border-radius: 10px;
 }
+
+#names {
+  font-size: 20px;
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+#text {
+  font-size: 18px;
+  color: #fff;
+  word-wrap: break-word;
+}
+
 
 #preloader {
   position: fixed;
