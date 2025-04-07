@@ -38,6 +38,7 @@ html, body {
   background-position: center;
   position: relative;
   overflow: hidden;
+  overflow-y: hidden;
 }
 
 #dialogues {
